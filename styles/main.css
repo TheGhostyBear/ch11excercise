@@ -16,8 +16,31 @@
 }
 
 /* the styles for the table */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1em 0;
+}
 
+th, td {
+	padding: 0.5em 1em;
+	text-align: left;
+	border: 1px solid var(--accent-color);
+}
 
+th {
+	background-color: var(--accent-color);
+	color: white;
+}
+
+tfoot {
+	font-weight: bold;
+}
+
+tfoot tr:last-child {
+	background-color: var(--accent-color);
+	color: white;
+}
 
 /* default styles */
 body {
